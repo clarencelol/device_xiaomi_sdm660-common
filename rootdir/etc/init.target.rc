@@ -391,10 +391,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #
 #
 #
-service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
-    class core
-    user root
-    oneshot
 #
 #service mdm_helper /system/bin/mdm_helper
 #    class core
