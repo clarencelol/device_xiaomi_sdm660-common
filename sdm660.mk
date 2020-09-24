@@ -232,6 +232,10 @@ PRODUCT_PACKAGES += \
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# GMS Permissions
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/privapp-permission/privapp-permissions-gms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp.permissions-gms.xml
+
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
