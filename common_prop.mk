@@ -164,10 +164,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
     debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
-    ro.opengles.version=196610 \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno \
     vendor.display.disable_skip_validate=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
-    vendor.display.enable_default_color_mode=0
+    vendor.display.enable_default_color_mode=0 \
+    vendor.opengles.version=196610
 
 # The default sf phase offset is set to 6ms, to avoid it be included into next
 # vsync threshold, set high fps early sf and next vsync threshold phase offset
