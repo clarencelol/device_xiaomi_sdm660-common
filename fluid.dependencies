@@ -10,11 +10,5 @@
     "repository"  : "vendor_xiaomi_sdm660-common",
     "target_path" : "vendor/xiaomi/sdm660-common",
     "branch"      : "fluid-11-jasmine"
-  },
-  {
-    "remote"      : "github",
-    "repository"  : "clarencelol/android_vendor_xiaomi_MiuiCamera",
-    "target_path" : "vendor/xiaomi/MiuiCamera",
-    "branch"      : "master"
   }
 ]
