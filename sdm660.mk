@@ -555,12 +555,14 @@ PRODUCT_PACKAGES += \
 # Thermal Conf
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    $(COMMON_PATH)/configs/thermal/thermal-engine-battery.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-battery.conf \
-    $(COMMON_PATH)/configs/thermal/thermal-engine-battery2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-battery2.conf \
-    $(COMMON_PATH)/configs/thermal/thermal-engine-default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-default.conf \
-    $(COMMON_PATH)/configs/thermal/thermal-engine-gameing.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-gameing.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-camera.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-high.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-high.conf \
     $(COMMON_PATH)/configs/thermal/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
-    $(COMMON_PATH)/configs/thermal/thermal-engine-performance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-performance.conf
+    $(COMMON_PATH)/configs/thermal/thermal-engine-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-phone.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-pubgmhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-pubgmhd.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-sgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sgame.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-streaming.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-streaming.conf
 
 # USB
 PRODUCT_PACKAGES += \
