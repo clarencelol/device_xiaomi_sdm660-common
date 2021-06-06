@@ -140,10 +140,6 @@
             <item value="" />
         </string-array>
     </carrier_config>
-    <carrier_config mcc="502" mnc="152">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-    </carrier_config>
     <carrier_config mcc="404">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
