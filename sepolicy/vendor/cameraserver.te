@@ -1,2 +1,3 @@
 set_prop(cameraserver, camera_prop)
+set_prop(cameraserver, system_prop)
 binder_call(cameraserver, mediacodec)
