@@ -10,6 +10,9 @@ type sysfs_headphonegain, sysfs_type, fs_type;
 type sysfs_micgain, sysfs_type, fs_type;
 type sysfs_earpiecegain, sysfs_type, fs_type;
 
+# HVDCP
+type vendor_sysfs_hvdcp, fs_type, sysfs_type;
+
 # Kcal
 type kcal_dev, sysfs_type, fs_type;
 
