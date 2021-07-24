@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2015-2019 AOSiP
+<!-- Copyright (C) 2013 The CyanogenMod Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -11,15 +10,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources>
 
-    <!-- Sets a custom extra padding for the QS icons and statusbar date -->
-    <dimen name="qs_items_padding">6dp</dimen>
+    <!-- Whether to show Selinux status in Settings -->
+    <bool name="config_showSelinuxStatus">false</bool>
 
-    <!-- Network traffic monitor -->
-    <dimen name="net_traffic_single_text_size">12dp</dimen>
-    <dimen name="net_traffic_multi_text_size">8dp</dimen>
-    <dimen name="net_traffic_txt_img_padding">4dp</dimen>
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">true</bool>
 
 </resources>
-
