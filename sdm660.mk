@@ -50,7 +50,6 @@ COMMON_PATH := device/xiaomi/sdm660-common
 include $(COMMON_PATH)/properties/common_prop.mk
 TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
 TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
 
 # A/B
