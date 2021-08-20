@@ -159,14 +159,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.hw=1 \
-    debug.sf.use_phase_offsets_as_durations=1 \
-    debug.sf.late.sf.duration=10500000 \
-    debug.sf.late.app.duration=20500000 \
-    debug.sf.early.sf.duration=16000000 \
-    debug.sf.early.app.duration=16500000 \
-    debug.sf.earlyGl.sf.duration=13500000 \
-    debug.sf.earlyGl.app.duration=21000000 \
     debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
     vendor.display.disable_skip_validate=1 \
@@ -282,15 +274,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.mot_detect=true \
     ro.vendor.sensors.pmd=true \
     ro.vendor.sensors.sta_detect=true
-
-# SurfaceFlinger
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.use_smart_90_for_video=true \
-    ro.surface_flinger.set_display_power_timer_ms=10000 \
-    ro.surface_flinger.set_touch_timer_ms=5000 \
-    ro.surface_flinger.set_idle_timer_ms=9000 \
-    ro.surface_flinger.wcg_composition_dataspace=143261696 \
-    debug.performance.tuning=1
 
 # System restart
 PRODUCT_PROPERTY_OVERRIDES += \
