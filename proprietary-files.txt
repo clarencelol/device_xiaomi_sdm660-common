@@ -1,29 +1,24 @@
-# ADSP - from LA.UM.8.2.1.r1-05600-sdm660
-lib/libadsprpc_system.so|9a3dbcdf1d2de14cbcd187775501952070281eb1
-lib/libmdsprpc_system.so|9b5721030debe30d8cf2b94f2ff0a777b5a68c23
-lib/libsdsprpc_system.so|d55cea722a32a438e66c91582f9a872b1b898c55
-lib64/libadsprpc_system.so|2802e61f0c74c6bca6b67f3d970e39826b5b4a08
-lib64/libmdsprpc_system.so|a2e54020580eefb5be831ba4a2a90ca4ef32a2e9
-lib64/libsdsprpc_system.so|a1c23de51134eeb2ff3c77da932e75762a5ac94e
-vendor/bin/adsprpcd|dbb7108a6f199d963cbf2145000edbd1be755385
-vendor/lib/libadsp_default_listener.so|5b5ba1662264843c6a793c315a4495e46f99c20f
-vendor/lib/libadsp_hvx_callback_skel.so|67cb46e6da3fa84d0cf086172591ba13493e663f
-vendor/lib/libadsp_hvx_stub.so|d5c2f0bc990c879fdbb4149c337d592c8762972b
-vendor/lib/libadsprpc.so|d2c7712198b94258c7e71ad3c029fe6dd0765bad
-vendor/lib/libfastcvadsp_stub.so|9957df1493863d78da261ab3bb8756be3f3d2583
-vendor/lib/libfastcvopt.so|fc36dbee817b90dd8a37e258c47a74f16c728b3b
-vendor/lib/libfastrpc_utf_stub.so|793413aac79aa4cb66bcd45d80195849eed8acd7
-vendor/lib/libmdsprpc.so|2200e11da607f2617e4fbb2a46b4a30b81f342c1
-vendor/lib/libsdsprpc.so|30aa229a2cc43a01c76f9c4b0fc25edfcce955fb
-vendor/lib/libssc_default_listener.so|fc7e2561d1a0df71a3a0b1220066184f3f640b7d
-vendor/lib64/libadsp_default_listener.so|30d391be99af9a013fab17676e9e8252c78d928d
-vendor/lib64/libadsprpc.so|d3ec3bfd39404ea5896304b7393cba3a52ad3f9f
-vendor/lib64/libfastcvadsp_stub.so|f84fd537f8f176e598c0cb49f0c457f308b67be4
-vendor/lib64/libfastcvopt.so|7d91a405c758355349b882f4aebe27659f9ddb87
-vendor/lib64/libfastrpc_utf_stub.so|891a4c987862c1b2d844379f8fb3bcdcb737e8c1
-vendor/lib64/libmdsprpc.so|e98e87e82fac74b6df2c8a626cfe8d1d9b17c4a0
-vendor/lib64/libsdsprpc.so|f0a3d7c976cc78e800c955f58b79468c85235ec8
-vendor/lib64/libssc_default_listener.so|3c7749fa1b3b7717ae1e8a7c2770c74a3345e5b0
+# ADSP - from lemon-11-RKQ1.201004.002
+system_ext/lib/libadsprpc_system.so|ad7380f11f7e7071bf002697aaa99954054808a3
+system_ext/lib/libmdsprpc_system.so|2167e38badc5ecbeb259abb196c369c964208a60
+system_ext/lib/libsdsprpc_system.so|b9410dcb6c653a7bcb7cebdec89286e59f3df3df
+system_ext/lib64/libadsprpc_system.so|c90242c44ec168ff80d0834478317a9151ed79d4
+system_ext/lib64/libmdsprpc_system.so|ab045634173d2a1568d326c3982d3472438397c9
+system_ext/lib64/libsdsprpc_system.so|2cf684c6a7de9a1d50f8a179e80f9f5ed5373257
+vendor/bin/adsprpcd|1d9477a7789658ab3949e770b90269032e038468
+vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
+vendor/lib/libadsprpc.so|4924cf69b91cbece9be76262d24ac1e781839d66
+vendor/lib/libadsp_default_listener.so|0376a56ab5d88e5d118e37f6e6371b30746a97e2
+vendor/lib/libfastcvdsp_stub.so|6ccfd797a035075db44aaf288a87d1eb041288b7
+vendor/lib/libfastcvopt.so|3cd704b8a6f215a1d531f2332188794d582f25c0
+vendor/lib/libmdsprpc.so|17ceb98d09e62f1ff9d36ff36c43ce2bcbe3f452
+vendor/lib/libsdsprpc.so|82ac98c24b9473c2ab013ce064e8c0f0b13de880
+vendor/lib64/libadsprpc.so|ece35b1d9c756adbed49d5ab44ba23696c9e5f45
+vendor/lib64/libadsp_default_listener.so|7f66bac08fa5edc53784591e0f99f390e095099b
+vendor/lib64/libfastcvdsp_stub.so|d267ea12eb2f38c58a4a009741d21b2bcccac5fa
+vendor/lib64/libfastcvopt.so|585862b02beb3b7d1a28434a6607a0ddde1d006f
+vendor/lib64/libmdsprpc.so|96395c1eb8a56f8f0b06215e2be2cb3c6e89a3da
+vendor/lib64/libsdsprpc.so|4c3786d5fbf76f23fd839b389db57fe7c840ead1
 
 # ADSP Modules - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
@@ -45,27 +40,27 @@ vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
 vendor/lib/rfsa/adsp/dirac_resource.dar|7728d5b2ee2927a01df5bd6d7edae3736186c844
 vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 
-# Audio - from LA.UM.8.2.1.r1-05600-sdm660
--framework/audiosphere.jar|c1679f5aca56f0cb24745b3f7d219acd04833bed
-etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
-vendor/lib/libacdb-fts.so|a2f09f2a01c326d6b57b1c0e406c92850ceef439
-vendor/lib/libacdbloader.so|5a891c9c215153085a5a31e5fc13c832ddf50081
-vendor/lib/libacdbrtac.so|98a8a9cf331cc10c755c808da3bf4da5d4de0c2a
-vendor/lib/libadiertac.so|a8a3442358b62541fe59995bb1ace90178dd8933
-vendor/lib/libadm.so|2a275948330d0b50cbbaee644d81ffa6cfb54590
-vendor/lib/libaudcal.so|2c7b95a1c0e43f1c7d8d679f472343776f7bf718
-vendor/lib/libaudioalsa.so|1d8eb7dae06b1cca0cd360a5996bb59a9bd8ba25
-vendor/lib/libaudioparsers.so|d898e3d2cc8177e916052527135258c8d9fc7e89
-vendor/lib/libdrc.so|aa8e8dd2a27803bf8ac36619036e1dc736be540b
-vendor/lib/libqtigef.so|10b64bf536b4edb6c09d047c218cfe4c9a9255f1
-vendor/lib64/libacdb-fts.so|fe3610a7cce613592e90245ce98a23be1763545c
-vendor/lib64/libacdbloader.so|e8d6513470d2c98205dee0dd003bcebe63c6e46a
-vendor/lib64/libacdbrtac.so|51d6d796b8d0815b8a7670dfbcd449dd3bb51506
-vendor/lib64/libadiertac.so|4418db299e36d870c2cb0eefd42474e0177354cd
-vendor/lib64/libaudcal.so|80ee15046e7a7249a0c9def9bf3f3d94efd3ce6a
-vendor/lib64/libaudioalsa.so|bdf49c709df8a1a7a7e232a6cb1ba6d15af594c7
-vendor/lib64/libaudioparsers.so|ad9394501d467fd264675ead74a4e6bab34eadd5
-vendor/lib64/libqtigef.so|1b7fa4dacefd97f019c342477ff57dc861e70277
+# Audio - from phoenix_sprout-11-RKQ1.201123.002
+system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
+-system_ext/framework/audiosphere.jar|9c28317f12b93a6d881c80a991ff24716fce4a12
+vendor/lib/libacdb-fts.so|042610c28956cebf798c0315d5f878fe4e2a7572
+vendor/lib/libacdbloader.so|418cbee9b439d0aa8458074a4c6ff6ead57f700a
+vendor/lib/libacdbrtac.so|b2856ced1ee7b89181f9ae0b484bc800c2085915
+vendor/lib/libadiertac.so|d6c1d35f12df30691a6a38edd9da529a6e4aebd2
+vendor/lib/libadm.so|35460db7533555d048198b669ebbd1f96ba495fd
+vendor/lib/libaudcal.so|f45a9cfe7522d6b7e0ab70146fe8511de2bfff03
+vendor/lib/libaudioalsa.so|1a06438186c648f81d15d18ab681b9bf977ab408
+vendor/lib/libaudioparsers.so|a8ad1766511c4055f0424e5ada211bda4a0ee9d4
+vendor/lib/libdrc.so|342fcc054b50cf144a95f04fa1c1e9e4267ca8b4
+vendor/lib/libqtigef.so|67fec669e2043edfe31275899f5a9e9ed09bc658
+vendor/lib64/libacdb-fts.so|a9f5236757ecdf0de8f5c4726dd0a4361956e6ce
+vendor/lib64/libacdbloader.so|a8bcf8eec26412e1a07d06f2ae1094ee188e140e
+vendor/lib64/libacdbrtac.so|b84a6db95abc9c5226bfa5d3f5f5b4f3cdc1c10b
+vendor/lib64/libadiertac.so|d3b2b930536d37ea5b14197501bda9561275a6e4
+vendor/lib64/libaudcal.so|e3b02bcdf7a319bd862cb68362bfcf0aafd45e29
+vendor/lib64/libaudioalsa.so|932587d2efa904358b455292859bd9d1d5d51827
+vendor/lib64/libaudioparsers.so|2a485150809270f527ce53462b938cf567316f4a
+vendor/lib64/libqtigef.so|0593d49269be237457ebb32b3c0367f37f468353
 
 # Alarm - from LA.UM.9.1.r1-10200-SMxxx0.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|bc906abd03e4a243201dde626b6580fd8a4f73ce
@@ -88,15 +83,15 @@ vendor/lib/com.qualcomm.qti.ant@1.0.so|f7fb088a6fcc746b4b9f661010542b543a74b92f
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|5ef111c6ecb35b94233ae694d80161e9f61b7cd6
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|203528c568c1c5ce33b35dcb9ee9eb7ecb1de206
 
-# Audio FX modules - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/lib/soundfx/libasphere.so|eaa35262337a8401aaecf02997e98e24083f064c
-vendor/lib/soundfx/libqcbassboost.so|a812a997ac3a314684ef46f4bb1a0d20c6805eb5
-vendor/lib/soundfx/libqcreverb.so|93d7325d3cc6a798b3d8cdb4317a91bcc81f8444
-vendor/lib/soundfx/libqcvirt.so|5f7c268e19a95cc9e17cc471b1664ce532d117c1
-vendor/lib64/soundfx/libasphere.so|27154ce2eed6902f36ed8c85324cf61c96c8af02
-vendor/lib64/soundfx/libqcbassboost.so|927ded057e9b098144617ce8416c82a6d68c3865
-vendor/lib64/soundfx/libqcreverb.so|5bd29987814ca813e49cd1a188ba4250244b82fa
-vendor/lib64/soundfx/libqcvirt.so|a362fce913d3ef85cd4d65fcfd09f53c00043bd6
+# Audio FX modules - from phoenix_sprout-11-RKQ1.201123.002
+vendor/lib/soundfx/libasphere.so|60225c5bb3480fc155a3e6f4828364f0041d2284
+vendor/lib/soundfx/libqcbassboost.so|7ca4fa2bb144373a51ce43e2c3fab1efb4f2cbe5
+vendor/lib/soundfx/libqcreverb.so|1e3f6f607fff94b4cc154142fca3222955e02bcf
+vendor/lib/soundfx/libqcvirt.so|9edac2a2eb9f5b7cb736ea03271103926dbbcd5a
+vendor/lib64/soundfx/libasphere.so|0074f7645a035955e35341f76aa414608ab569ba
+vendor/lib64/soundfx/libqcbassboost.so|bef06dd7b3252c7e93342bb20e373ea51f5e99b9
+vendor/lib64/soundfx/libqcreverb.so|cf4b58ade97e63bb3639202b5448153d92d5d6b1
+vendor/lib64/soundfx/libqcvirt.so|3753b3e64e82239a0279feed85ca823c73025965
 
 # Audio FX modules - from LA.UM.8.2.r1-07500-sdm660.0
 vendor/lib/soundfx/libmisoundfx.so|569ee2df586e95116b79cfb3d89429f2032a7a76
@@ -128,16 +123,17 @@ vendor/lib64/libbtnv.so|a6793a7b93fa607fcec39da7479566f84ed39aa4
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9b7ae20ce9d6d2a67fdac94268cec441278cca3d
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|e08969ef1897ec5958894323f7d6e730a1d7ce25
 
-# CDSP - from LA.UM.8.2.1.r1-05600-sdm660
-lib/libcdsprpc_system.so|37baeb8c1212a9e7d512c3aecdb4925ef072226b
-lib64/libcdsprpc_system.so|94d7d2d23273a183500ae6834e6dc2411a0ba6b5
-vendor/bin/cdsprpcd|806853d9a5e43487c9c6e53b8e35b95d663ceff4
-vendor/lib/libcdsp_default_listener.so|608b5f8b11fbe4f13074609a82405182ece62c3a
-vendor/lib/libcdsprpc.so|8459350211825c2c89931593fd12aadb63ec5335
-vendor/lib/libsysmon_cdsp_skel.so|9c088c263500259484a3b7c611efd413464b4d34
-vendor/lib64/libcdsp_default_listener.so|78899710541d42c57ff3d6a231f50e274e1d4ccc
-vendor/lib64/libcdsprpc.so|9df65cc5f9eb60030a2013aa37a2906fe3be1c51
-vendor/lib64/libsysmon_cdsp_skel.so|40d3511922c744016c419983b18f97952c23fee5
+# CDSP - from lemon-11-RKQ1.201004.002
+system_ext/lib/libcdsprpc_system.so|89ab10847d4da850aff7d9d5fdf7e3bc4e02bff7
+system_ext/lib64/libcdsprpc_system.so|28cfbe4037c2001030d070ca2f1d377824f1851e
+vendor/bin/cdsprpcd|49e7bd1a410b2f4c15fe5728e0f57acb52d86751
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib/libcdsprpc.so|61ff904c3f7b2b12aa107d9a08209f2822e0e854
+vendor/lib/libcdsp_default_listener.so|3af8e9fbe0b154574ac0a709d1af401960922471
+vendor/lib/libsysmon_cdsp_skel.so|d30f7863f72cbcb6d5f657ab780bb53e02e1aaa4
+vendor/lib64/libcdsprpc.so|0852f993c82f0b46aa6cc786a78346bbbb91e355
+vendor/lib64/libcdsp_default_listener.so|3524b24feb967b095c10b91b22c98eff4d79e8ff
+vendor/lib64/libsysmon_cdsp_skel.so|055eda65786454d6de63e1cecefbc7a69006d369
 
 # Charger - from LA.UM.9.1.r1-10200-SMxxx0.0
 vendor/bin/hvdcp_opti|e03e8467d6f5dbfe2d099a7eafde8efa552bf9ff
@@ -299,6 +295,13 @@ vendor/lib64/libcpion.so|ff24ef248bb35fd3cc1081a63f33c2565dc6351f
 vendor/lib64/libhdcpsrm.so|ee8e7c29e2b716a8bb07c3cbb730e34d8af3c64e
 vendor/lib64/libwvhidl.so|adb4b2c6e65b98310d051b8b00573b55bc365435
 vendor/lib64/mediadrm/libwvdrmengine.so|80280a2292db04a1eb3750df6897dea96f0f62f5
+
+# DSP - from lemon-11-RKQ1.201004.002
+vendor/bin/dspservice|97d6e5d59d3c4be93154f544fe2afef31e24d305
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|78e36705372a19ac664bb890dacd35a96e66bb32
 
 # ESE - from LA.UM.9.1.r1-10200-SMxxx0.0
 product/lib/vendor.qti.esepowermanager@1.0.so:vendor/lib/vendor.qti.esepowermanager@1.0.so|1f8f248676f9df84d11e9238460a351395b65d56
@@ -911,10 +914,12 @@ vendor/bin/sensors.qti|80122bf87aee029fa7029aa1cc8a651cf167a06b
 vendor/lib/hw/activity_recognition.sdm660.so|abb27164556460cfd4c059a3298570acc387ac61
 vendor/lib/libsensor1.so|b1b0dcb45432e51fabffe595010f35a017c7a3fd
 vendor/lib/libsensor_reg.so|170c40b9b7d48c922cd3ca1a552a34311ee79799
+vendor/lib/libssc_default_listener.so|fc7e2561d1a0df71a3a0b1220066184f3f640b7d
 vendor/lib/sensor_calibrate.so|9f81f1bf43b7871555915c9d57bba16d0419af40
 vendor/lib64/hw/activity_recognition.sdm660.so|ad32fc78b016d290dfe23435f6132fd918064dd8
 vendor/lib64/libsensor1.so|dac9d5fb1b5aacfa5bedf812ebdd04eadd0af2dc
 vendor/lib64/libsensor_reg.so|be00c924983a2a279f799332cf2b262da9af78d1
+vendor/lib64/libssc_default_listener.so|3c7749fa1b3b7717ae1e8a7c2770c74a3345e5b0
 vendor/lib64/sensor_calibrate.so|dacb7a77e1713a756a43c082329e9f42e2c0d40e
 
 # SMC Invoke - from LA.UM.9.1.r1-10200-SMxxx0.0
