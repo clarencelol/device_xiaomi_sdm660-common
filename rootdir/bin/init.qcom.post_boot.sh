@@ -2372,14 +2372,50 @@ case "$target" in
                 "317" | "324" | "325" | "326" | "345" | "346" )
 
             # configure governor settings for little cluster
-            echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+            echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+            echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+            echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+            echo 1401600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
+            echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
+            echo 633600 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+            echo 902400 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
 
             # configure governor settings for big cluster
-            echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-            echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
-            echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+            echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
+            echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
+            echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
+            echo 1401600 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
+            echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
+            echo 1113600 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
+            echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq
+
+            echo 2 > /proc/sys/kernel/sched_window_stats_policy
+            echo 5 > /proc/sys/kernel/sched_ravg_hist_size
+            echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
+            echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+            echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
+            echo 30 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
+            echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
+            echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster
+            echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
+
+            # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
+            echo -6 >  /sys/devices/system/cpu/cpu0/sched_load_boost
+            echo -6 >  /sys/devices/system/cpu/cpu1/sched_load_boost
+            echo -6 >  /sys/devices/system/cpu/cpu2/sched_load_boost
+            echo -6 >  /sys/devices/system/cpu/cpu3/sched_load_boost
+            echo -6 >  /sys/devices/system/cpu/cpu4/sched_load_boost
+            echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
+            echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
+            echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
+            echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+            echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+
+            # Setting b.L scheduler parameters
+            echo 96 > /proc/sys/kernel/sched_upmigrate
+            echo 90 > /proc/sys/kernel/sched_downmigrate
+            echo 140 > /proc/sys/kernel/sched_group_upmigrate
+            echo 120 > /proc/sys/kernel/sched_group_downmigrate
 
             # Report max frequency to unity tasks
             echo "UnityMain,libunity.so" > /proc/sys/kernel/sched_lib_name
