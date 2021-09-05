@@ -576,6 +576,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+# Sqlite
+PRODUCT_PACKAGES += \
+    sqlite3
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
