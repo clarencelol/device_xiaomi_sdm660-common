@@ -590,6 +590,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal Conf
 PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/thermal/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     $(COMMON_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     $(COMMON_PATH)/configs/thermal/thermal-engine-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-arvr.conf \
     $(COMMON_PATH)/configs/thermal/thermal-engine-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-camera.conf \
