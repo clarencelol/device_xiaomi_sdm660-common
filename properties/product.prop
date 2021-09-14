@@ -23,6 +23,10 @@ ro.charger.disable_init_blank=true
 # CNE
 persist.vendor.cne.feature=1
 
+# Data
+persist.data.df.dev_name=rmnet_usb0
+persist.vendor.data.profile_update=true
+
 # DPM
 persist.vendor.dpm.feature=1
 
@@ -80,8 +84,6 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
 # IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
 persist.vendor.ims.disableUserAgent=0
 
 # LMKD
@@ -96,10 +98,6 @@ ro.lmk.downgrade_pressure=100
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
-
-# Netmgr
-persist.vendor.data.iwlan.enable=true
-persist.vendor.data.mode=concurrent
 
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
@@ -117,7 +115,11 @@ persist.radio.aosp_usr_pref_sel=true
 persist.radio.add_power_save=1
 persist.radio.VT_CAM_INTERFACE=2 
 persist.radio.data_con_rprt=1
-ril.subscription.types=NV,RUIM
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.radio.enable_temp_dds=true
+persist.vendor.radio.force_on_dc=true
+ril.subscription.types=RUIM
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 
