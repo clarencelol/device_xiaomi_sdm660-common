@@ -277,6 +277,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pmd=true \
     ro.vendor.sensors.sta_detect=true
 
+# SoC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM660
+
 # System restart
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.shutdown_timeout=2
