@@ -8,6 +8,7 @@ ro.config.vc_call_vol_steps=7
 
 # Bluetooth
 persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+vendor.bluetooth.soc=cherokee
 
 # Blur
 ro.sf.blurs_are_expensive=1
@@ -87,6 +88,9 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
 
+# Netflix
+ro.netflix.bsp_rev=Q660-13149-1
+
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
@@ -109,6 +113,7 @@ persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.mt_sms_ack=30
 persist.sys.fflag.override.settings_provider_model=false
+persist.sys.fflag.override.settings_network_and_internet_v2=true
 ril.subscription.types=RUIM
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
@@ -141,4 +146,3 @@ persist.sys.wfd.virtual=0
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
 ro.zram.periodic_wb_delay_hours=24
-
