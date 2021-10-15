@@ -447,6 +447,10 @@ vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 vendor/lib/hw/vulkan.sdm660.so|6df3aa5c6badc46bc7a0367b9a62b0ab5b406159
 vendor/lib64/hw/vulkan.sdm660.so|f0cf8bccfcfd0473a2c0322b1274dc4d752f2abb
 
+# Graphics - Prebuilt
+vendor/lib/libtinyxml.so
+vendor/lib64/libtinyxml.so
+
 # IRQ balance - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
 
