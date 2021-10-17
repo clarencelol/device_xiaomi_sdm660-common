@@ -54,8 +54,8 @@ persist.vendor.data.shsusr_load         u:object_r:vendor_radio_prop:s0
 persist.vendor.data.qmipriod_load       u:object_r:vendor_radio_prop:s0
 
 # RIL
-ro.build.software.version               u:object_r:exported_radio_prop:s0
-ro.product.mod_device                   u:object_r:exported_radio_prop:s0
+ro.build.software.version               u:object_r:telephony_status_prop:s0
+ro.product.mod_device                   u:object_r:telephony_status_prop:s0
 
 # Thermal
 vendor.thermal.config                   u:object_r:vendor_thermal_prop:s0
