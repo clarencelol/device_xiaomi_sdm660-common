@@ -355,6 +355,7 @@ vendor/lib64/liblocationservice_glue.so|e00cbc1d542b6f897a556b1035877f6fc2303c2a
 vendor/lib64/liblowi_client.so|216f25bbea47fe311b3d67f0ff1e794944a8c70f
 vendor/lib64/liblowi_wifihal.so|e6024558aa19934babe668f8a070e9d98590c239
 vendor/lib64/libqcc_file_agent.so|3707206276c3f8a37d0ab6ee7b2360b5bffe2b3e
+vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 vendor/lib64/libslimclient.so|8011d09ac05d11ab1a465ed6f0da1f3b781d160b
 vendor/lib64/libxtadapter.so|495af82c252ccca8257c5281ba699da214fd1539
 vendor/lib64/vendor.qti.gnss@1.0.so|aded26ec9bd75d948c8c8e3fb13ec7106423b3b4
