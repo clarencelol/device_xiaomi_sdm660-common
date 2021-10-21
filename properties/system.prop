@@ -12,6 +12,7 @@ vendor.bluetooth.soc=cherokee
 
 # Blur
 ro.surface_flinger.supports_background_blur=0
+ro.launcher.blur.appLaunch=0
 
 # Camera
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam
