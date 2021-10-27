@@ -172,7 +172,7 @@ on early-boot
     write /dev/ipa 1
 
 on boot
-    start rmt_storage
+    start vendor.rmt_storage
     start rfs_access
 
     # Thermal
