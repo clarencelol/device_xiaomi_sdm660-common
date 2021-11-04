@@ -1,4 +1,5 @@
 type blkio_dev, dev_type;
 type fingerprint_device, dev_type;
 type spidev_device, dev_type;
+type latency_device, dev_type;
 type vendor_persist_block_device, dev_type;
