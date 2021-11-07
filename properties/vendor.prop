@@ -134,13 +134,6 @@ persist.vendor.dpmhalservice.enable=1
 # DRM
 drm.service.enabled=true
 
-# Dirac
-ro.audio.soundfx.dirac=true
-persist.audio.dirac.speaker=true
-persist.dirac.acs.controller=qem
-persist.dirac.acs.ignore_error=1
-persist.dirac.acs.storeSettings=1
-
 # Display
 debug.cpurend.vsync=false
 debug.hwui.use_buffer_age=false
