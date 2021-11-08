@@ -87,7 +87,8 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libssrec \
+    libspkrprot \
+    libtinycompress \
     tinymix
 
 # Audio Configs
