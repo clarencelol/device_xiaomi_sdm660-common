@@ -39,27 +39,41 @@ vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af9
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
 
-# Audio - from phoenix_sprout-11-RKQ1.201123.002
+# Audio - from LA.UM.9.1.r1-10900-SMxxx0.0
+vendor/lib/libacdb-fts.so|0018570fcbbf69eafc2be93342a277fc9fa4b62d
+vendor/lib/libacdbloader.so|3136289748b95c45dbba1809f1ed4c4e2e5bd8e5
+vendor/lib/libacdbrtac.so|9e30364f762731e56a2c5cc999bc048e304651a6
+vendor/lib/libadiertac.so|343d6772f7db8e3c2f0d48b37f858fc8c73254fa
+vendor/lib/libadm.so|7a1cfba258a1ca590011c2529f620b2db822acc7
+vendor/lib/libaudcal.so|7d6e782971519eb41752e21859991d11fb7f039c
+vendor/lib/libaudioalsa.so|5c5d66115a837010fcff8728340174dff35c16e0
+vendor/lib/libaudioparsers.so|25cd3ce7766eb5bb0d516668fedcc8f82788586a
+vendor/lib/libdrc.so|b066f176f119847059c5aa148f73e1b042fbeab3
+vendor/lib/libhdmipassthru.so|068a1629fe4995fcbdcf105460b6b913c7b357f8
+vendor/lib/libqtigef.so|fdfa65bca9034596438331ecb99c132eb401c32f
+vendor/lib/libssrec.so|ee7cfdae633bb8eda5d3e78d9adf01176480c261
+vendor/lib64/libacdb-fts.so|24fdd7f88649516f165b52fba3ac1de5065bcf0c
+vendor/lib64/libacdbloader.so|4f4541c27bdf11258284133e60df36d4a88b0435
+vendor/lib64/libacdbrtac.so|b6cd70bb23736746ea0c1a06979273ccea671e82
+vendor/lib64/libadiertac.so|c49add9b914ee45b33b89a3432feb07c4743d4ff
+vendor/lib64/libaudcal.so|9dd4741a2a52e89b169939e7ee19a6f068ce914b
+vendor/lib64/libaudioalsa.so|8f41a7e5c69d75de8d0847bc27cf0253b64210a2
+vendor/lib64/libaudioparsers.so|10dbc5e65c39ccfd30f37bb6394b389e724b7ff9
+vendor/lib64/libhdmipassthru.so|7dadf3fe41eba9f1704161e60c1126fb2cab2989
+vendor/lib64/libqtigef.so|87f89f796ea958cbc7ae103669ece676945e24cf
+vendor/lib64/libssrec.so|20f0e112d1f4aae618c4f464e908035252f301a1
+
+# Audio FX modules - from LA.UM.9.1.r1-10900-SMxxx0.0
 system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
 -system_ext/framework/audiosphere.jar|9c28317f12b93a6d881c80a991ff24716fce4a12
-vendor/lib/libacdb-fts.so|042610c28956cebf798c0315d5f878fe4e2a7572
-vendor/lib/libacdbloader.so|418cbee9b439d0aa8458074a4c6ff6ead57f700a
-vendor/lib/libacdbrtac.so|b2856ced1ee7b89181f9ae0b484bc800c2085915
-vendor/lib/libadiertac.so|d6c1d35f12df30691a6a38edd9da529a6e4aebd2
-vendor/lib/libadm.so|35460db7533555d048198b669ebbd1f96ba495fd
-vendor/lib/libaudcal.so|f45a9cfe7522d6b7e0ab70146fe8511de2bfff03
-vendor/lib/libaudioalsa.so|1a06438186c648f81d15d18ab681b9bf977ab408
-vendor/lib/libaudioparsers.so|a8ad1766511c4055f0424e5ada211bda4a0ee9d4
-vendor/lib/libdrc.so|342fcc054b50cf144a95f04fa1c1e9e4267ca8b4
-vendor/lib/libqtigef.so|67fec669e2043edfe31275899f5a9e9ed09bc658
-vendor/lib64/libacdb-fts.so|a9f5236757ecdf0de8f5c4726dd0a4361956e6ce
-vendor/lib64/libacdbloader.so|a8bcf8eec26412e1a07d06f2ae1094ee188e140e
-vendor/lib64/libacdbrtac.so|b84a6db95abc9c5226bfa5d3f5f5b4f3cdc1c10b
-vendor/lib64/libadiertac.so|d3b2b930536d37ea5b14197501bda9561275a6e4
-vendor/lib64/libaudcal.so|e3b02bcdf7a319bd862cb68362bfcf0aafd45e29
-vendor/lib64/libaudioalsa.so|932587d2efa904358b455292859bd9d1d5d51827
-vendor/lib64/libaudioparsers.so|2a485150809270f527ce53462b938cf567316f4a
-vendor/lib64/libqtigef.so|0593d49269be237457ebb32b3c0367f37f468353
+vendor/lib/soundfx/libasphere.so|b2daeb875914a33575c7d7a67429f25d09d35489
+vendor/lib/soundfx/libqcbassboost.so|4405bcc8cbe9e70032235fe5a6895d681a25762d
+vendor/lib/soundfx/libqcreverb.so|e5a5d94be9967d4a8b807a7e5a65f25df027bcea
+vendor/lib/soundfx/libqcvirt.so|216404b033697716ed8453b9f31659a7cdbacc97
+vendor/lib64/soundfx/libasphere.so|b9296f601776e631be0f347f8f10d26689103d12
+vendor/lib64/soundfx/libqcbassboost.so|3bef018756b7890729940f69265269644bb943f3
+vendor/lib64/soundfx/libqcreverb.so|37e45f698e5667331440c5ba210ba9ab443d8851
+vendor/lib64/soundfx/libqcvirt.so|fdb442364c618a6d933bfa9cec9ff7495695a4ef
 
 # Alarm - from LA.UM.9.1.r1-10900-SMxxx0.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|bc906abd03e4a243201dde626b6580fd8a4f73ce
@@ -81,16 +95,6 @@ product/lib64/com.qualcomm.qti.ant@1.0.so:system_ext/lib64/com.qualcomm.qti.ant@
 vendor/lib/com.qualcomm.qti.ant@1.0.so|f7fb088a6fcc746b4b9f661010542b543a74b92f
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|5ef111c6ecb35b94233ae694d80161e9f61b7cd6
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|203528c568c1c5ce33b35dcb9ee9eb7ecb1de206
-
-# Audio FX modules - from phoenix_sprout-11-RKQ1.201123.002
-vendor/lib/soundfx/libasphere.so|60225c5bb3480fc155a3e6f4828364f0041d2284
-vendor/lib/soundfx/libqcbassboost.so|7ca4fa2bb144373a51ce43e2c3fab1efb4f2cbe5
-vendor/lib/soundfx/libqcreverb.so|1e3f6f607fff94b4cc154142fca3222955e02bcf
-vendor/lib/soundfx/libqcvirt.so|9edac2a2eb9f5b7cb736ea03271103926dbbcd5a
-vendor/lib64/soundfx/libasphere.so|0074f7645a035955e35341f76aa414608ab569ba
-vendor/lib64/soundfx/libqcbassboost.so|bef06dd7b3252c7e93342bb20e373ea51f5e99b9
-vendor/lib64/soundfx/libqcreverb.so|cf4b58ade97e63bb3639202b5448153d92d5d6b1
-vendor/lib64/soundfx/libqcvirt.so|3753b3e64e82239a0279feed85ca823c73025965
 
 # Bluetooth (aptX) - from phoenix_sprout-11-RKQ1.201123.002
 product/lib/libaptX_encoder.so:system_ext/lib/libaptX_encoder.so|400ed8deb255c1a098261cc9243afb293ead0b0e
@@ -779,7 +783,7 @@ vendor/bin/time_daemon|a27ac4aeafb41158b96046edbd553ae76835b4ed
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 
 # Wifi - from ginkgo V12.5.1.0.RCOCNXM
-vendor/bin/cnss-daemon|1b840d768c5d49a3a440fffcf526eefa45a7ad5b 
+vendor/bin/cnss-daemon|1b840d768c5d49a3a440fffcf526eefa45a7ad5b
 
 # Common Camera - from Pie
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
