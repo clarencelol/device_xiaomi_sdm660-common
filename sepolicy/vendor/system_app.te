@@ -1,18 +1,37 @@
-allow system_app blkio_dev:dir search;
-allow system_app kcal_dev:dir search;
-allow system_app kcal_dev:file rw_file_perms;
 allow system_app proc_vmallocinfo:file read;
-allow system_app sysfs_vibrator:dir search;
-allow system_app sysfs_vibrator:file rw_file_perms;
-allow system_app sysfs_graphics:dir search;
-allow system_app sysfs_leds:dir search;
-allow system_app sysfs_fpsinfo:file rw_file_perms;
-allow system_app sysfs_headphonegain:file rw_file_perms;
-allow system_app sysfs_micgain:file rw_file_perms;
-allow system_app sysfs_thermal:file rw_file_perms;
-allow system_app sysfs_earpiecegain:file rw_file_perms;
-allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
+
+allow system_app {
+  blkio_dev
+  kcal_dev
+  sysfs_graphics
+  sysfs_thermal
+  sysfs_leds
+  sysfs_zram
+}:dir search;
+
+allow system_app {
+  cgroup
+  kcal_dev
+  sysfs_fpsinfo
+  sysfs_earpiecegain
+  sysfs_headphonegain
+  sysfs_micgain
+  sysfs_thermal
+}:file rw_file_perms;
+
+# Allow system_app to find *_service
+allow system_app {
+  app_api_service
+  audioserver_service
+}:service_manager find;
+
+# Allow reading and writing shared prefs
+allow system_app system_app_data_file:dir create_dir_perms;
+allow system_app system_app_data_file:{ file lnk_file } create_file_perms;
+
+# Allow binder communication with gpuservice
+binder_call(system_app, gpuservice)
 
 get_prop(system_app, system_prop);
 set_prop(system_app, system_prop);

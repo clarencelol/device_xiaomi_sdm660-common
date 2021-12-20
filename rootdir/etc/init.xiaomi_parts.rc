@@ -15,16 +15,12 @@
 #
 
 on boot
-    # Haptic strength
-    chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
-    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
-    
     # FPS
     chown system system /sys/devices/virtual/graphics/fb0/measured_fps
     chmod 0660 /sys/devices/virtual/graphics/fb0/measured_fps
     chown system system /sys/class/graphics/fb0/measured_fps
     chmod 0660 /sys/class/graphics/fb0/measured_fps
-    
+
     # Audio Amplification
     chown system system /sys/kernel/sound_control/earpiece_gain
     chown system system /sys/kernel/sound_control/headphone_gain
@@ -33,13 +29,7 @@ on boot
     chmod 0660 /sys/kernel/sound_control/headphone_gain
     chmod 0660 /sys/kernel/sound_control/mic_gain
 
-    # Notification LED
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/red/max_brightness
-    chmod 0660 /sys/class/leds/red/brightness
-    chmod 0660 /sys/class/leds/red/max_brightness
-
-# KCal
+    # KCal
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_hue
