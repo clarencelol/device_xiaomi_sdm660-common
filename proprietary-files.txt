@@ -56,7 +56,6 @@ vendor/lib/libaudioparsers.so|9a998d072d1bcfe7ce9ca0a4e7a4a38a66318ee6
 vendor/lib/libdrc.so|95ae02c1c274e9407b992587b8bb0ff39a08f34e
 vendor/lib/libhdmipassthru.so|097e4a0eabbd4e455377baef4b9493442b861055
 vendor/lib/libqtigef.so|977cbb704f6b2bae7f4e2f17b8c15146a6cacffb
-vendor/lib/libssrec.so|2e06834d12daab407d34bffad0cc8192d069b706
 vendor/lib64/libacdb-fts.so|436bc68b1de28716607e5c8445b60dd21f56a5d2
 vendor/lib64/libacdbloader.so|f0c47deb5cabfc7e7922e31c74d9913a78f062fe
 vendor/lib64/libacdbrtac.so|621360f8363fd5e55ea9cd0f4c8f216397ff900c
@@ -66,7 +65,6 @@ vendor/lib64/libaudioalsa.so|361b3de1f094cc0943add1ef7040ffeadc5dbdcb
 vendor/lib64/libaudioparsers.so|c0c3f1e2eafac1194334fd85dfcdb7e398a2c6c2
 vendor/lib64/libhdmipassthru.so|f6e46857a65a39214a09838f1b37a82926a485c6
 vendor/lib64/libqtigef.so|cdbc8eb095afddd0f990c972cd8c1b2b4e7e9cd7
-vendor/lib64/libssrec.so|0c744218cb46817b288017b363720f08c791cf00
 
 # Audio FX modules - from S62Pro RKQ1.210406.002
 system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
@@ -116,14 +114,12 @@ vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|10bddb86ecd1c7e0b0d4
 vendor/lib/libbt-hidlclient.so|826a5101e2c36d7877bc924b53e22cd00bec6dd6
 vendor/lib/libbtnv.so|a1b994bac9b746f51036fc829310cec4f773c621
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|5d204b6e003932069782774dbae4f5f209848870
-vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|bd7fe72bf679acb93dd2945e8905ef0942f0fbb1
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|08664074cf5c80d7209250e9c3aef90716802607
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|ebdfcc7064fc144acf6cba300486c6394af3d73b
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|5e06b7b33d084975d6326875268cb237ad6d8559
 vendor/lib64/libbt-hidlclient.so|0a0d0ac4e2f4e2e80f4ec488b53c18c96ff08dc6
 vendor/lib64/libbtnv.so|a6793a7b93fa607fcec39da7479566f84ed39aa4
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9b7ae20ce9d6d2a67fdac94268cec441278cca3d
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|e08969ef1897ec5958894323f7d6e730a1d7ce25
 
 # CDSP - from S62Pro RKQ1.210406.002
 system_ext/lib/libcdsprpc_system.so|78b3fc57248a97ad0498a070487d58875aa2fe3b
@@ -319,32 +315,22 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|05931b5d088bd7000b0b002ee650b
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
 
 # GPS - from LA.UM.9.1.r1-10200-SMxxx0.0
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
-vendor/bin/hw/android.hardware.gnss@2.1-service-qti|63dc6408ddd64686a7ab21282cb4b50faba23993
 vendor/bin/loc_launcher|5954e99e6e66b181dbd8fef522a7b9c5aa5eb9bb
 vendor/bin/lowi-server|0a3ca5b74d3be4d65371fd339037ad89efc38caa
 vendor/bin/slim_daemon|9892d85df877f6c84e65866e6d5b2c891af11ce5
 vendor/bin/xtra-daemon|f8f0b952dabbcfb4284f3340184c55b207c6f01d
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|49ce6c23840916166cc65f667bae57ee2422b171
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|590157e389c233f13eed813382f4fe52396f6808
-vendor/lib64/libbatching.so|6e3423a98c83ad40b58694bf324fad4fe9ca4a44
 vendor/lib64/libcdfw.so|543b8282f4b6719113f04e14dd908137521e2bb5
 vendor/lib64/libcdfw_remote_api.so|558636f4fa4c17f29cb644c8c6e07766b7240005
 vendor/lib64/libdataitems.so|1c349e4dda23ebab69f38cf3c644b95e05c632b9
 vendor/lib64/libgdtap.so|b46b7f6caaf2c2d4f43ed263bcdff3edfdc9f0f1
-vendor/lib64/libgeofencing.so|29007aaf47ccf5239aea03c670194d7f7550e834
-vendor/lib64/libgnss.so|b5f1cfdd019153548d9c7c7a2522ec428336523b
 vendor/lib64/libgnsspps.so|69c0e0e110577e3955b81fa2ae3834c57e1a0927
-vendor/lib64/libgps.utils.so|069b65e977963a62eed225d57371216c1835f49a
 vendor/lib64/libizat_client_api.so|ec34d18d00d850c6fa26b1963a248ed9bbaebfaf
 vendor/lib64/libizat_core.so|d8341d3f4829bfae0fa19ea30334f20434072832
 vendor/lib64/liblbs_core.so|edc6518e15729fdbc01a0125d11eb0807daf8980
 vendor/lib64/libloc_api_v02.so|ade50e4f66f337ed89ccc133a9b1b932d0af0dda
-vendor/lib64/libloc_core.so|dafbc9963d445b829d721710acbb9192947e3952
 vendor/lib64/libloc_socket.so|b95d9bf25780f17c4c285dd0b8a0cbc23f4e9e9d
-vendor/lib64/liblocation_api.so|8dd0538b04de45c44d45669a4a42a878f48ad9a0
 vendor/lib64/liblocationservice.so|437fe0c837ef2b0880f36d0430a70e9990965c57
 vendor/lib64/liblocationservice_glue.so|e00cbc1d542b6f897a556b1035877f6fc2303c2a
 vendor/lib64/liblowi_client.so|216f25bbea47fe311b3d67f0ff1e794944a8c70f
