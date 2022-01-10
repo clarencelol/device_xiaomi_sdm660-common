@@ -182,7 +182,6 @@
     <ctl name="I2S TX2 INP1" value="ZERO" />
     <ctl name="I2S TX2 INP2" value="ZERO" />
     <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia4" value="0" />
-    <ctl name="ADC1_INP1 Switch" value="0" />
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia4" value="0" />
     <ctl name="HDMI Mixer MultiMedia4" value="0" />
     <ctl name="INT4_MI2S_RX_VI_FB_MONO_CH_MUX" value="ZERO" />
@@ -278,10 +277,6 @@
     <ctl name="RT_PROXY_1_TX SetCalMode" value="CAL_MODE_NONE" />
     <!-- RT Proxy Cal end -->
 
-    <!-- mixer control to disable lowlatency qos voting -->
-    <ctl name="MultiMedia5_RX QOS Vote" value="Disable" />
-    <!-- mixer control to disable lowlatency qos voting end -->
-
     <!-- Incall Recording -->
     <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
@@ -290,10 +285,12 @@
     <!-- Incall Recording End -->
 
     <!-- Incall Music -->
+<!-- HTH-32892 HTH-32895 ADD by duanlongfei for MIUI SOS feature at 20180919 start -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music Audio Mixer MultiMedia1" value="0" />
     <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="0" />
+<!-- HTH-32892 ADD by duanlongfei for MIUI SOS feature at 20180919 end -->
     <!-- Incall Music End -->
 
     <!-- compress-voip-call start -->
@@ -383,7 +380,7 @@
     <ctl name="COMP2 Switch" value="1" />
 
     <!-- config adc1 tangshouxing 08/24  -->
-    <ctl name="ADC1_INP1 Switch" value="0" />
+    <ctl name="ADC1_INP1 Switch" value="1" />
 
     <!-- MUX controls -->
     <ctl name="DEC1 MUX" value="ZERO" />
@@ -447,9 +444,6 @@
     <ctl name="IIR1 INP4 Volume" value="53" />
     <ctl name="IIR1 INP1 MUX" value="ZERO" />
 
-	<!-- smart PA TFA 9894 -->
-	<ctl name="TFA Profile" value="music" />
-	
     <!-- anc related -->
 
     <!-- vbat related data -->
@@ -486,7 +480,7 @@
     </path>
 
     <path name="echo-reference headphones-44.1">
-        <path name="echo-reference headphones" />
+         <path name="echo-reference headphones" />
     </path>
 
     <path name="echo-reference-voip">
@@ -508,14 +502,13 @@
     </path>
 
     <path name="echo-reference speaker">
-        <ctl name="EC Reference Channels" value="One"/> 
-	<ctl name="EC Reference Bit Format" value="S16_LE"/> 
-	<ctl name="EC Reference SampleRate" value="48000"/> 
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="I2S_RX" />
     </path>
 
-    <path name="deep-buffer-playback">
+     <path name="deep-buffer-playback">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
+
     <path name="deep-buffer-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -601,22 +594,22 @@
         <path name="deep-buffer-playback speaker" />
     </path>
 
-    <path name="deep-buffer-playback speaker-safe-and-headphones">
-        <path name="deep-buffer-playback headphones" />
-        <path name="deep-buffer-playback" />
-    </path>
-
     <path name="deep-buffer-playback speaker-and-headphones-hifi-filter">
         <path name="deep-buffer-playback headphones-hifi-filter" />
         <path name="deep-buffer-playback speaker" />
     </path>
 
+    <path name="deep-buffer-playback speaker-safe-and-headphones">
+        <path name="deep-buffer-playback headphones" />
+        <path name="deep-buffer-playback" />
+    </path>
+
     <path name="low-latency-playback">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
+
     <path name="low-latency-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
-        <ctl name="TFA Profile" value="ringtone" />
     </path>
 
     <path name="low-latency-playback speaker-protected">
@@ -647,9 +640,9 @@
 
     <!-- lct add for whatsapp call ring -->    
     <path name="low-latency-playback speaker-and-bt-sco-wb"> 
-	 <path name="low-latency-playback bt-sco-wb" /> 
-	 <path name="low-latency-playback speaker" /> 
-    </path> 
+	    <path name="low-latency-playback bt-sco-wb" /> 
+	    <path name="low-latency-playback speaker" /> 
+    </path>
 
     <path name="low-latency-playback speaker-and-hdmi">
         <path name="low-latency-playback hdmi" />
@@ -719,6 +712,7 @@
     <path name="audio-ull-playback">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
+
     <path name="audio-ull-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
@@ -816,13 +810,10 @@
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia2" value="1" />
     </path>
 
-    <path name="low-latency-playback resume">
-        <ctl name="MultiMedia5_RX QOS Vote" value="Enable" />
-    </path>
-
     <path name="compress-offload-playback">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
+
     <path name="compress-offload-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
@@ -936,6 +927,7 @@
     <path name="compress-offload-playback2">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia7" value="1" />
     </path>
+
     <path name="compress-offload-playback2 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia7" value="1" />
     </path>
@@ -1037,6 +1029,7 @@
     <path name="compress-offload-playback3">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
+
     <path name="compress-offload-playback3 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
@@ -1138,7 +1131,7 @@
     <path name="compress-offload-playback4">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia11" value="1" />
     </path>
-	
+
     <path name="compress-offload-playback4 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia11" value="1" />
     </path>
@@ -1240,7 +1233,7 @@
     <path name="compress-offload-playback5">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
-
+	
     <path name="compress-offload-playback5 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
@@ -1342,7 +1335,7 @@
     <path name="compress-offload-playback6">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia13" value="1" />
     </path>
-	
+
     <path name="compress-offload-playback6 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia13" value="1" />
     </path>
@@ -1818,7 +1811,7 @@
         <ctl name="INT0_MI2S_RX Port Mixer SLIM_8_TX" value="1" />
         <ctl name="INT0_MI2S_RX_DL_HL Switch" value="1" />
     </path>
-	
+
     <path name="play-fm speaker">
         <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
         <ctl name="PRI_MI2S_RX Port Mixer SLIM_8_TX" value="1" />
@@ -2012,7 +2005,6 @@
         <ctl name="Voip_Tx Mixer INT3_MI2S_TX_Voip" value="1" />
     </path>
 
-
     <path name="compress-voip-call bt-sco">
         <ctl name="SLIM_7_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer SLIM_7_TX_Voip" value="1" />
@@ -2053,11 +2045,13 @@
         <ctl name="INT0_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer INT3_MI2S_TX_MMode1" value="1" />
     </path>
+
     <path name="voicemmode1-call speaker">
         <ctl name="PRI_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer INT3_MI2S_TX_MMode1" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="PRI_MI2S_TX" />
     </path>
+
     <path name="voicemmode1-call headphones">
         <ctl name="INT0_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer INT3_MI2S_TX_MMode1" value="1" />
@@ -2113,11 +2107,13 @@
         <ctl name="INT0_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
     </path>
+
     <path name="voicemmode2-call speaker">
         <ctl name="PRI_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="PRI_MI2S_TX" />
     </path>
+
     <path name="voicemmode2-call headphones">
         <ctl name="INT0_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
@@ -2172,9 +2168,11 @@
    <path name="spkr-rx-calib">
         <ctl name="INT4_MI2S_RX_DL_HL Switch"  value="1" />
     </path>
+
     <path name="spkr-rx-calib speaker">
         <ctl name="PRI_MI2S_RX_DL_HL Switch"  value="1" />
     </path>
+
     <path name="spkr-vi-record">
     </path>
 
@@ -2357,6 +2355,7 @@
     </path>
 
     <path name="speaker-mic">
+        <!-- path name="adc3" / -->
         <path name="adc1" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
@@ -2381,7 +2380,6 @@
         <path name="speaker-mono" />
         <ctl name="VI_FEED_TX Channels" value="One" />
         <ctl name="INT4_MI2S_RX_VI_FB_MONO_CH_MUX" value="INT5_MI2S_TX" />
-	<ctl name="TFA Profile" value="voice" />
     </path>
 
     <path name="voice-speaker-2-protected">
@@ -2390,7 +2388,6 @@
         <ctl name="VI_FEED_TX Channels" value="One" />
         <ctl name="INT4_MI2S_RX_VI_FB_MONO_CH_MUX" value="INT5_MI2S_TX" />
         <ctl name="INT5 MI2S VI MONO" value="Right" />
-	<ctl name="TFA Profile" value="voice" />
     </path>
 
     <path name="vi-feedback">
@@ -2520,17 +2517,14 @@
     <path name="voice-speaker">
 	<!--ctl name="VOC_EXT_EC MUX" value="PRI_MI2S_TX" /-->
         <path name="speaker" />
-	<ctl name="TFA Profile" value="voice" />
     </path>
 
     <path name="voice-speaker-2">
         <path name="speaker-mono-2" />
-	<ctl name="TFA Profile" value="voice" />
     </path>
 
     <path name="voice-speaker-fluid">
         <path name="speaker-fluid" />
-	<ctl name="TFA Profile" value="voice" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -2539,12 +2533,10 @@
 
     <path name="voice-speaker-vbat">
         <path name="speaker-vbat-mono" />
-	<ctl name="TFA Profile" value="voice" />
     </path>
 
     <path name="voice-speaker-2-vbat">
         <path name="speaker-vbat-mono-2" />
-	<ctl name="TFA Profile" value="voice" />
     </path>
 
     <path name="voice-headphones">
@@ -2582,8 +2574,8 @@
     </path>
 
     <path name="speaker-and-headphones-no-ce">
-        <path name="headphones-no-ce" />
-        <path name="speaker" />
+    <path name="headphones-no-ce" />
+    <path name="speaker" />
     </path>
 
     <path name="speaker-safe-and-headphones">
@@ -2766,8 +2758,8 @@
 
     <path name="voice-speaker-dmic-ef-echo">
         <path name="speaker-dmic-endfire" />
-	<ctl name="AUDIO_REF_EC_UL1 MUX" value="I2S_RX" /> 
-	<ctl name="MultiMedia1 Mixer INT3_MI2S_TX" value="1" /> 
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="I2S_RX" />
+        <ctl name="MultiMedia1 Mixer INT3_MI2S_TX" value="1" />
     </path>
 
     <path name="voice-rec-dmic-ef">
@@ -3176,7 +3168,7 @@
     </path>
 
     <path name="incall_music_uplink">
-        <ctl name="Incall_Music Audio Mixer MultiMedia1" value="1" />
+        <ctl name="Incall_Music Audio Mixer MultiMedia2" value="1" />
     </path>
 
     <path name="incall_music_uplink speaker">
@@ -3272,7 +3264,7 @@
     </path>
 
     <path name="incall_music_uplink2">
-        <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="1" />
+        <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="1" />
     </path>
 
     <path name="incall_music_uplink2 speaker">
