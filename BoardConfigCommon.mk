@@ -74,9 +74,6 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 TARGET_USES_MEDIA_EXTENSIONS := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# Battery Saver
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power-libperfmgr/power/power-mode.cpp
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
