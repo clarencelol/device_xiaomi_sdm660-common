@@ -42,7 +42,7 @@ vendor.display.disable_scaler=0
 # Surfaceflinger
 debug.sf.hw=1
 debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=0
+debug.sf.latch_unsignaled=1
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.early_phase_offset_ns=500000
 debug.sf.early_app_phase_offset_ns=500000
