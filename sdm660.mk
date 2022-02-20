@@ -86,13 +86,11 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
     libsndmonitor \
+    libspkrprot \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener \
-    libspkrprot \
-    libtinycompress \
-    tinymix
+    libvolumelistener
 
 # Audio Configs
 PRODUCT_COPY_FILES += \
@@ -136,11 +134,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     bt_stack.conf \
     libbthost_if \
-    libhdmiedid \
-    libhfp \
     libldacBT_bco \
     libldacBT_dec \
-    libsndmonitor \
     vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
