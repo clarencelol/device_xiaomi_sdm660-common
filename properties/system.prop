@@ -36,6 +36,9 @@ persist.hwc.enable_vds=1
 ro.qualcomm.cabl=0
 sdm.debug.disable_skip_validate=1
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Surfaceflinger
 debug.sf.hw=1
 debug.sf.enable_hwc_vds=0
