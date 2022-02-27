@@ -68,6 +68,17 @@ vendor/lib/libadm.so|d7c7d22c4fe53312e1e49fbffd587b25fdf0ac89
 vendor/lib/libaudcal.so|f935b8c33972b8cee40f760478f1b64a54705683
 vendor/lib/libqtigef.so|e0c548247e923f1e972e7765a678566dd874afb7
 
+# Audio ACDB - jasmine V11.0.28.0.QDIMIXM
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|57837ee3c6d7072ee1a919e592fab0d0e016eaed
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|ec2636696cb39ef5eeba2d1b5196d017cd949dba
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|0b3b101c8c48e1c5d463fba629dc597624859f93
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|b95ed10e51cf7d255e355dfe59a91dcc9c012d2f
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|cf7dbd5ccb31fa8ff87741f832e6f1c58c84b2ed
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|e2072f38c4a1860d74cb788dd52874c9473fc717
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|d4c98a463c0a7b147d08876b8347c514e881be29
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|5b55bf4db3181950a8982483ae22d85ab7721155
+vendor/etc/acdbdata/adsp_avs_config.acdb|d9507f31b8970320233128fed24c39742ee53c67
+
 # Bluetooth - from lemon RKQ1.201004.002
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|d2e534c410bd211fb2b969460538773d705a9831
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
