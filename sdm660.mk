@@ -148,11 +148,6 @@ PRODUCT_PACKAGES += \
 # Boot animation
 TARGET_BOOTANIMATION_SIZE := 1080p
 
-# Cgroup and task_profiles
-PRODUCT_COPY_FILES += \
-    system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
-    system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
-
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
@@ -532,6 +527,13 @@ PRODUCT_PACKAGES += \
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
+
+# Task profiles
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/task_profiles/cgroups_26.json:$(TARGET_COPY_OUT_SYSTEM)/etc/task_profiles/cgroups_26.json \
+    $(COMMON_PATH)/configs/task_profiles/task_profiles_26.json:$(TARGET_COPY_OUT_SYSTEM)/etc/task_profiles/task_profiles_26.json \
+    $(COMMON_PATH)/configs/task_profiles/cgroups_26.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(COMMON_PATH)/configs/task_profiles/task_profiles_26.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
