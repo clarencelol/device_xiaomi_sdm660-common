@@ -422,8 +422,8 @@ vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 vendor/lib/hw/vulkan.adreno.so|139868cf11006199fffc109b7a207e4e7f4cbd18
 vendor/lib64/hw/vulkan.adreno.so|9215100009b574f71dc75272f22a499302ea121d
 
-# IRQ balance - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
+# IRQ balance - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
+vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
 
 # Keymaster - from S62Pro RKQ1.210406.002
 vendor/lib64/libkeymasterdeviceutils.so|6fd0b0e1b30c4e6c5272794896306596880c657b
